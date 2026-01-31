@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steban Martínez | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Header fijo -->
+  <header class="header">
+    <a href="#home" class="header__logo">
+      <span class="header__name" data-i18n="headerName">STEBAN MARTÍNEZ</span>
+    </a>
+    <nav class="header__nav">
+      <a href="#home" class="header__link" data-i18n="navHome">HOME</a>
+      <a href="#about" class="header__link" data-i18n="navAbout">ABOUT</a>
+      <a href="#projects" class="header__link" data-i18n="navProjects">PROJECTS</a>
+      <a href="#contact" class="header__link" data-i18n="navContact">CONTACT</a>
+      <button type="button" class="header__lang" aria-label="Ver en inglés" id="langToggle">EN</button>
+    </nav>
+    <button type="button" class="header__menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Sidebar redes sociales -->
+  <aside class="social-sidebar">
+    <a href="https://linkedin.com/in/steban-martinez-074697267" target="_blank" rel="noopener noreferrer"
+      class="social-sidebar__link" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="">
+    </a>
+    <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer" class="social-sidebar__link"
+      aria-label="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
+    </a>
+  </aside>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <h1 class="hero__title" data-i18n="heroTitle">STEBAN MARTÍNEZ — JUNIOR WEB DEVELOPER</h1>
+      <p class="hero__tagline" data-i18n="heroTagline">Construyo SPAs, integro APIs y desarrollo sistemas con
+        autenticación y bases de datos. Frontend y backend con enfoque en código mantenible y entrega funcional.</p>
+      <p class="hero__meta" data-i18n="heroMeta">España - Denia · Abierto a remoto</p>
+      <a href="#projects" class="btn btn--primary" data-i18n="heroCta">VER PROYECTOS</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2 class="section-title" data-i18n="aboutSectionTitle">ABOUT ME</h2>
+      <p class="section-subtitle" data-i18n="aboutSectionSubtitle">Qué construyo, en qué contexto y cómo trabajo.</p>
+      <div class="about__grid">
+        <div class="about__col about__col--text">
+          <h3 class="about__heading" data-i18n="aboutHeadingProfile">Perfil</h3>
+          <p class="about__text" data-i18n="aboutText1" data-i18n-html="true">Construyo <strong>aplicaciones
+              web</strong>: SPAs con JavaScript, interfaces responsivas (HTML, CSS, Bootstrap), integración con APIs
+            REST y backends con PHP o Supabase. Uso bases de datos relacionales (MySQL, PostgreSQL, SQLite) y he
+            implementado autenticación, RLS y dashboards con datos en tiempo real.</p>
+          <p class="about__text" data-i18n="aboutText2" data-i18n-html="true">Mis proyectos son académicos y personales:
+            sistemas CRUD, módulos de gestión y frontends que consumen APIs. Certificación <strong>Meta Full-Stack
+              Developer</strong> (Frontend, Backend, APIs, Git) · <a
+              href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX" target="_blank"
+              rel="noopener noreferrer" class="about__credential">Ver credencial</a>. Enfoque en código legible, entrega
+            funcional y aprendizaje continuo.</p>
+          <p class="about__text" data-i18n="aboutText3" data-i18n-html="true"><a
+              href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Sunshide12" target="_blank"
+              rel="noopener noreferrer">GitHub</a>. Busco mi primera oportunidad laboral, prácticas o rol junior — <a
+              href="#contact">contacto</a>.</p>
+          <a href="#contact" class="btn btn--primary" data-i18n="aboutCta">CONTACTAR</a>
+        </div>
+        <div class="about__col about__col--skills">
+          <h3 class="about__heading" data-i18n="aboutHeadingSkills">Habilidades técnicas</h3>
+          <p class="skills-category" data-i18n="skillsCategoryFrontend">Frontend</p>
+          <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">SPA</span>
+          </div>
+          <p class="skills-category" data-i18n="skillsCategoryBackend">Backend & APIs</p>
+          <div class="skills">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+          <p class="skills-category" data-i18n="skillsCategoryDb">Bases de datos</p>
+          <div class="skills">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+          <p class="skills-category" data-i18n="skillsCategoryTools">Herramientas</p>
+          <div class="skills">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Github</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2 class="section-title" data-i18n="projectsSectionTitle">PROJECTS</h2>
+      <p class="section-subtitle" data-i18n="projectsSectionSubtitle">Proyectos personales y académicos. Cada uno
+        resuelve un problema concreto y demuestra habilidades técnicas aplicadas.</p>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="img/excusas.png" alt="Módulo de Excusas Web" class="project__img" data-i18n-alt="project1Alt">
+        </div>
+        <div class="project__content">
+          <h3 class="project__title" data-i18n="project1Title">Módulo de Excusas Web</h3>
+          <p class="project__desc" data-i18n="project1Desc1" data-i18n-html="true"><strong>Problema:</strong> las
+            instituciones necesitan registrar y tramitar solicitudes de excusa con historial, roles y estados claros
+            para evitar pérdida de información y disputas.</p>
+          <p class="project__desc" data-i18n="project1Desc2" data-i18n-html="true"><strong>Qué construí:</strong>
+            sistema web con backend en PHP y MySQL: modelos de datos relacionados, flujos de validación, seguimiento de
+            estados y roles. Proyecto de grado (Técnico y Tecnólogo en COTECNOVA).</p>
+          <p class="project__desc" data-i18n="project1Desc3" data-i18n-html="true"><strong>Demuestra:</strong> capacidad
+            de modelar dominio y datos relacionales, implementar reglas de negocio en backend y exponerlas en
+            formularios y flujos usables — base para sistemas internos más grandes.</p>
+          <p class="project__tech">PHP · JavaScript · MySQL · HTML</p>
+          <a href="https://github.com/Sunshide12/Excusas-2" target="_blank" rel="noopener noreferrer"
+            class="btn btn--primary" data-i18n="projectRepo">Ver repositorio</a>
+        </div>
+      </article>
+
+      <article class="project project--reverse">
+        <div class="project__media">
+          <img src="img/Inventory.png" alt="Inventory Web - Sistema de inventario" class="project__img"
+            data-i18n-alt="project2Alt">
+        </div>
+        <div class="project__content">
+          <h3 class="project__title" data-i18n="project2Title">Inventory Web</h3>
+          <p class="project__desc" data-i18n="project2Desc1" data-i18n-html="true"><strong>Problema:</strong> negocios y
+            equipos necesitan un único lugar para ver productos, stock y valor, con datos aislados por usuario para
+            evitar fugas entre cuentas.</p>
+          <p class="project__desc" data-i18n="project2Desc2"><strong>Qué construí:</strong> SPA con CRUD de productos y
+            categorías, autenticación con Supabase (email), políticas RLS por usuario y dashboard con valor de
+            inventario y alertas de stock bajo.</p>
+          <p class="project__desc" data-i18n="project2Desc3" data-i18n-html="true"><strong>Demuestra:</strong>
+            integración con BaaS, aplicación de políticas de seguridad a nivel de fila (RLS) y estructura de frontend
+            modular — relevante para productos SaaS y multi-tenant.</p>
+          <p class="project__tech">JavaScript · Supabase · Bootstrap · HTML · CSS</p>
+          <a href="https://github.com/Sunshide12/Inventory_Web" target="_blank" rel="noopener noreferrer"
+            class="btn btn--primary" data-i18n="projectRepo">Ver repositorio</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__media">
+          <img src="img/apiFrontend.png" alt="Frontend API - Consumo de API" class="project__img"
+            data-i18n-alt="project3Alt">
+        </div>
+        <div class="project__content">
+          <h3 class="project__title" data-i18n="project3Title">Frontend API</h3>
+          <p class="project__desc" data-i18n="project3Desc1" data-i18n-html="true"><strong>Problema:</strong> los datos
+            del backend solo aportan valor si alguien puede consultarlos y actuar sobre ellos desde una interfaz clara,
+            sin depender de herramientas técnicas.</p>
+          <p class="project__desc" data-i18n="project3Desc2" data-i18n-html="true"><strong>Qué construí:</strong>
+            aplicación web que consume una API REST: listado, filtrado y gestión de datos desde el navegador.</p>
+          <p class="project__desc" data-i18n="project3Desc3" data-i18n-html="true"><strong>Demuestra:</strong> capacidad
+            de consumir APIs REST, manejar estado y datos en el cliente y traducirlos en una UI funcional — habilidad
+            central en equipos donde frontend y backend están separados.</p>
+          <p class="project__tech">JavaScript · HTML · CSS</p>
+          <a href="https://github.com/Sunshide12/FrontendAPI" target="_blank" rel="noopener noreferrer"
+            class="btn btn--primary" data-i18n="projectRepo">Ver repositorio</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2 class="section-title" data-i18n="contactSectionTitle">CONTACT</h2>
+      <p class="section-subtitle" data-i18n="contactSectionSubtitle">Si mi perfil encaja con tu equipo o proyecto (rol
+        junior, prácticas, colaboración), escríbeme y respondo en breve.</p>
+      <form class="contact-form" action="https://formspree.io/f/mvzrjnzd" method="POST">
+        <label class="contact-form__label" for="name" data-i18n="contactLabelName">Name</label>
+        <input type="text" id="name" name="name" class="contact-form__input" placeholder="Enter Your Name"
+          data-i18n-placeholder="contactPlaceholderName" required>
+        <label class="contact-form__label" for="email" data-i18n="contactLabelEmail">Email</label>
+        <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter Your Email"
+          data-i18n-placeholder="contactPlaceholderEmail" required>
+        <label class="contact-form__label" for="message" data-i18n="contactLabelMessage">Message</label>
+        <textarea id="message" name="message" class="contact-form__input contact-form__textarea"
+          placeholder="Enter Your Message" data-i18n-placeholder="contactPlaceholderMessage" rows="5"
+          required></textarea>
+        <button type="submit" class="btn btn--primary contact-form__submit" data-i18n="contactSubmit">SUBMIT</button>
+        <p class="contact-form__feedback" id="contactFeedback" aria-live="polite" hidden></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <span class="footer__name" data-i18n="headerName">STEBAN MARTÍNEZ</span>
+          <p class="footer__tagline" data-i18n="footerTagline">Junior Web Developer · Frontend & Backend · España ·
+            Abierto a remoto.</p>
+        </div>
+        <div class="footer__social">
+          <span class="footer__social-title" data-i18n="footerSocialTitle">SOCIAL</span>
+          <div class="footer__links">
+            <a href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn" data-i18n="footerLinkedIn">LinkedIn</a>
+            <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+              data-i18n="footerGitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copy" data-i18n="footerCopy" data-i18n-html="true">© Copyright <span id="year"></span>. Made by
+        Steban Martínez</p>
+    </footer>
+  </main>
+
+  <!-- Chat widget -->
+  <a href="#contact" class="chat-widget" aria-label="Chatea conmigo" data-i18n-aria-label="chatAriaLabel">
+    <span class="chat-widget__text" data-i18n="chatText">Chat with me 👋</span>
+    <span class="chat-widget__icon" aria-hidden="true">💬</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
