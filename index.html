@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Steban Martínez | Desarrollador Web</title>
+    <title>Steban Martínez | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,19 +14,20 @@
   </head>
 
   <body>
-    <!-- Header fijo -->
     <header class="header">
       <a href="#home" class="header__logo">
         <span class="header__name" data-i18n="headerName">STEBAN MARTÍNEZ</span>
       </a>
       <nav class="header__nav">
         <a href="#home" class="header__link" data-i18n="navHome">HOME</a>
-        <a href="#about" class="header__link" data-i18n="navAbout">ABOUT</a>
+        <a href="#about" class="header__link" data-i18n="navAbout"
+          >TECNOLOGÍAS</a
+        >
         <a href="#projects" class="header__link" data-i18n="navProjects"
-          >PROJECTS</a
+          >PROYECTOS</a
         >
         <a href="#contact" class="header__link" data-i18n="navContact"
-          >CONTACT</a
+          >CONTACTO</a
         >
         <button
           type="button"
@@ -42,7 +43,6 @@
       </button>
     </header>
 
-    <!-- Sidebar redes sociales -->
     <aside class="social-sidebar">
       <a
         href="https://linkedin.com/in/steban-martinez-074697267"
@@ -71,168 +71,389 @@
     </aside>
 
     <main>
-      <!-- Hero -->
       <section id="home" class="hero">
-        <h1 class="hero__title" data-i18n="heroTitle">
-          STEBAN MARTÍNEZ — WEB DEVELOPER
-        </h1>
+        <h1 class="hero__title" data-i18n="heroTitle">Software Developer</h1>
         <p class="hero__tagline" data-i18n="heroTagline">
-          Construyo SPAs, integro APIs y desarrollo sistemas con autenticación y
-          bases de datos. Frontend y backend con enfoque en código mantenible y
-          entrega funcional.
+          Desarrollador con enfoque Full-Stack. Especializado en la creación de
+          soluciones escalables mediante código limpio y arquitecturas modulares
+          que optimizan el rendimiento técnico y la experiencia del usuario.
         </p>
-        <p class="hero__meta" data-i18n="heroMeta">
-          España - Denia · Abierto a remoto
-        </p>
+        <p class="hero__meta" data-i18n="heroMeta">España - Denia</p>
         <a href="#projects" class="btn btn--primary" data-i18n="heroCta"
-          >VER PROYECTOS</a
+          >VER PORTAFOLIO</a
         >
       </section>
 
-      <!-- About -->
       <section id="about" class="about">
-        <h2 class="section-title" data-i18n="aboutSectionTitle">ABOUT ME</h2>
+        <h2 class="section-title" data-i18n="aboutSectionTitle">TECNOLOGÍAS</h2>
+
         <p class="section-subtitle" data-i18n="aboutSectionSubtitle">
-          Qué construyo, en qué contexto y cómo trabajo.
+          Más allá de sólo código: resolucion de problemas.
         </p>
+
         <div class="about__grid">
-          <div class="about__col about__col--text">
-            <h3 class="about__heading" data-i18n="aboutHeadingProfile">
-              Perfil
-            </h3>
-            <p class="about__text" data-i18n="aboutText1" data-i18n-html="true">
-              Construyo <strong>aplicaciones web</strong>: SPAs con JavaScript,
-              interfaces responsivas (HTML, CSS, Bootstrap), integración con
-              APIs REST y backends con PHP o Supabase. Uso bases de datos
-              relacionales (MySQL, PostgreSQL, SQLite) y he implementado
-              autenticación, RLS y dashboards con datos en tiempo real.
-            </p>
-            <p class="about__text" data-i18n="aboutText2" data-i18n-html="true">
-              Mis proyectos son académicos y personales: sistemas CRUD, módulos
-              de gestión y frontends que consumen APIs. Certificación
-              <strong>Meta Full-Stack Developer</strong> (Frontend, Backend,
-              APIs, Git) ·
-              <a
-                href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="about__credential"
-                >Ver credencial</a
-              >. Enfoque en código legible, entrega funcional y aprendizaje
-              continuo.
-            </p>
-            <p class="about__text" data-i18n="aboutText3" data-i18n-html="true">
-              <a
-                href="https://www.linkedin.com/in/steban-martinez-074697267/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-              ·
-              <a
-                href="https://github.com/Sunshide12"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >. Busco mi primera oportunidad laboral, prácticas o rol junior —
-              <a href="#contact">contacto</a>.
-            </p>
-            <a href="#contact" class="btn btn--primary" data-i18n="aboutCta"
-              >CONTACTAR</a
-            >
-          </div>
           <div class="about__col about__col--skills">
             <h3 class="about__heading" data-i18n="aboutHeadingSkills">
-              Habilidades técnicas
+              Stack Tecnológico
             </h3>
-            <p class="skills-category" data-i18n="skillsCategoryFrontend">
-              Frontend
-            </p>
-            <div class="skills">
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Bootstrap</span>
-              <span class="skill-tag">Responsive Design</span>
-              <span class="skill-tag">SPA</span>
-            </div>
-            <p class="skills-category" data-i18n="skillsCategoryBackend">
-              Backend & APIs
-            </p>
-            <div class="skills">
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Supabase</span>
-              <span class="skill-tag">REST APIs</span>
-            </div>
-            <p class="skills-category" data-i18n="skillsCategoryDb">
-              Bases de datos
-            </p>
-            <div class="skills">
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">SQLite</span>
-            </div>
-            <p class="skills-category" data-i18n="skillsCategoryTools">
-              Herramientas
-            </p>
-            <div class="skills">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Github</span>
+
+            <div class="skills-grid" aria-hidden="false">
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                />
+
+                <div class="skill-label">React</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React Native"
+                />
+
+                <div class="skill-label">React Native</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+
+                <div class="skill-label">JavaScript</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tailwindcss.svg"
+                  alt="Tailwind CSS"
+                />
+
+                <div class="skill-label">Tailwind CSS</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                  alt="Bootstrap"
+                />
+
+                <div class="skill-label">Bootstrap</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                />
+
+                <div class="skill-label">Node.js</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP"
+                />
+
+                <div class="skill-label">PHP</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+
+                <div class="skill-label">Python</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                />
+
+                <div class="skill-label">MySQL</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                />
+
+                <div class="skill-label">PostgreSQL</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+
+                <div class="skill-label">Git</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg"
+                  alt="Vite"
+                />
+
+                <div class="skill-label">Vite</div>
+              </div>
+
+              <div class="skill-item">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/supabase.svg"
+                  alt="Supabase"
+                />
+
+                <div class="skill-label">Supabase</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Projects -->
+      <link rel="stylesheet" href="carrousel/base.css" />
+      <link rel="stylesheet" href="carrousel/styles.css" />
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="carrousel/script.js" defer></script>
+
+      <section id="certifications" class="certifications">
+        <h2 class="section-title" data-i18n="certificationsSectionTitle">
+          CERTIFICACIONES
+        </h2>
+        <p class="section-subtitle" data-i18n="certificationsSectionSubtitle">
+          Formación profesional validada y especialización en Full-Stack
+          Development.
+        </p>
+
+        <div class="certifications__grid">
+          <article class="certification-card">
+            <div class="certification-card__visual">
+              <img
+                src="img/certificate-meta-fullstack.png"
+                alt="Meta Full-Stack Developer Certificate"
+                class="certification-card__image"
+                loading="lazy"
+              />
+            </div>
+            <div class="certification-card__content">
+              <div class="certification-card__header">
+                <div class="certification-card__issuer">
+                  <img
+                    src="img/metaLogo.png"
+                    alt="Meta"
+                    class="certification-card__logo"
+                  />
+                  <span class="certification-card__platform"
+                    >Meta • Coursera</span
+                  >
+                </div>
+              </div>
+
+              <h3 class="certification-card__title" data-i18n="metaCertTitle">
+                Meta Full-Stack Developer
+              </h3>
+
+              <p class="certification-card__date" data-i18n="metaCertDate">
+                Especialización Profesional • Completado: Agosto 2025
+              </p>
+
+              <p
+                class="certification-card__description"
+                data-i18n="metaCertDesc"
+                data-i18n-html="true"
+              >
+                Especialización completa en desarrollo
+                <strong>Full-Stack</strong>: dominio de <strong>React</strong> y
+                JavaScript para frontend, <strong>Django</strong> y Python para
+                backend, diseño de bases de datos, APIs REST, control de
+                versiones con Git y mejores prácticas de ingeniería de software.
+              </p>
+
+              <div class="certification-card__skills">
+                <span class="cert-tag">React</span>
+                <span class="cert-tag">JavaScript ES6+</span>
+                <span class="cert-tag">HTML & CSS</span>
+                <span class="cert-tag">Django</span>
+                <span class="cert-tag">Python</span>
+                <span class="cert-tag">API REST</span>
+                <span class="cert-tag">Git & GitHub</span>
+                <span class="cert-tag">Database Design</span>
+              </div>
+
+              <div class="certification-card__buttons">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--primary"
+                  data-i18n="certViewButton"
+                >
+                  Ver Credencial en Coursera
+                </a>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--secondary"
+                  data-i18n="certVerifyButton"
+                >
+                  Verificar Certificado
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="projects" class="projects">
-        <h2 class="section-title" data-i18n="projectsSectionTitle">PROJECTS</h2>
+        <h2 class="section-title" data-i18n="projectsSectionTitle">
+          PROYECTOS DESTACADOS
+        </h2>
         <p class="section-subtitle" data-i18n="projectsSectionSubtitle">
-          Proyectos personales y académicos. Cada uno resuelve un problema
-          concreto y demuestra habilidades técnicas aplicadas.
+          Selección de desarrollos donde aplico patrones de diseño y resolución
+          de problemas complejos.
         </p>
 
         <article class="project project--reverse">
           <div class="project__media">
             <img
-              src="img/Inventory.png"
-              alt="Inventory Web - Sistema de inventario"
+              src="img/construyendo.png"
+              alt="Sistema de Gestión de Inventario ST"
               class="project__img"
-              data-i18n-alt="project2Alt"
             />
           </div>
           <div class="project__content">
             <h3 class="project__title" data-i18n="project2Title">
-              Inventory Web
+              Inventory Management System (Arquitectura Híbrida)
             </h3>
             <p
               class="project__desc"
               data-i18n="project2Desc1"
               data-i18n-html="true"
             >
-              <strong>Problema:</strong> negocios y equipos necesitan un único
-              lugar para ver productos, stock y valor, con datos aislados por
-              usuario para evitar fugas entre cuentas.
+              <strong>El Reto:</strong> Diseñar un sistema donde la lógica de
+              negocio esté completamente aislada de la infraestructura,
+              permitiendo la sustitución de componentes críticos sin afectar la
+              integridad.
             </p>
             <p class="project__desc" data-i18n="project2Desc2">
-              <strong>Qué construí:</strong> SPA con CRUD de productos y
-              categorías, autenticación con Supabase (email), políticas RLS por
-              usuario y dashboard con valor de inventario y alertas de stock
-              bajo.
+              <strong>Solución:</strong> Implementé una estructura basada en
+              Hexagonal + Vertical Slicing. Desarrollé la UI con React y
+              Tailwind, integrando Supabase (Auth y PostgreSQL) bajo principios
+              SOLID para garantizar un software modular y de alto rendimiento.
             </p>
             <p
               class="project__desc"
               data-i18n="project2Desc3"
               data-i18n-html="true"
             >
-              <strong>Demuestra:</strong> integración con BaaS, aplicación de
-              políticas de seguridad a nivel de fila (RLS) y estructura de
-              frontend modular — relevante para productos SaaS y multi-tenant.
+              <strong>Resultado:</strong> Un sistema desacoplado que facilita la
+              escalabilidad y el mantenimiento a largo plazo, optimizando la
+              gestión de inventario profesional.
             </p>
             <p class="project__tech">
-              JavaScript · Supabase · Bootstrap · HTML · CSS
+              React · Vite · Tailwind CSS · Supabase · Hexagonal Arch
+            </p>
+            <div class="project__buttons" style="display: flex; gap: 10px">
+              <a
+                href="https://github.com/Sunshide12/Inventario-Profesional-ST-"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--primary"
+                data-i18n="projectRepo"
+                >Ver Código / Arquitectura</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__media">
+            <img
+              src="img/Excusas-sistema.png"
+              alt="Gestor de Excusas Académicas"
+              class="project__img"
+            />
+          </div>
+          <div class="project__content">
+            <h3 class="project__title" data-i18n="project1Title">
+              Gestor Académico Institucional (COTECNOVA)
+            </h3>
+            <p
+              class="project__desc"
+              data-i18n="project1Desc1"
+              data-i18n-html="true"
+            >
+              <strong>El Reto:</strong> Digitalizar y centralizar el flujo
+              administrativo de excusas institucionales, eliminando la gestión
+              manual y reduciendo tiempos de respuesta.
+            </p>
+            <p
+              class="project__desc"
+              data-i18n="project1Desc2"
+              data-i18n-html="true"
+            >
+              <strong>Solución:</strong> Desarrollé el núcleo del sistema
+              mediante PHP, gestionando la lógica de acceso por roles y
+              normalizando la base de datos MySQL para asegurar la integridad de
+              datos entre entidades académicas.
+            </p>
+            <p class="project__tech">
+              PHP · MySQL · Gestión de Roles · Normalización de Datos
+            </p>
+            <a
+              href="https://github.com/Sunshide12/Excusas-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary"
+              data-i18n="projectRepo"
+              >Ver Código Backend</a
+            >
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__media">
+            <img
+              src="img/Inventory-sistema.png"
+              alt="Inventory Web Core"
+              class="project__img"
+            />
+          </div>
+          <div class="project__content">
+            <h3 class="project__title" data-i18n="project3Title">
+              Inventory Web (SPA Performance)
+            </h3>
+            <p
+              class="project__desc"
+              data-i18n="project3Desc1"
+              data-i18n-html="true"
+            >
+              <strong>El Reto:</strong> Desarrollar una aplicación de página
+              única (SPA) con alto rendimiento sin depender de librerías
+              reactivas externas para el manejo del DOM.
+            </p>
+            <p
+              class="project__desc"
+              data-i18n="project3Desc2"
+              data-i18n-html="true"
+            >
+              <strong>Solución:</strong> Creación de una arquitectura basada en
+              JavaScript Vanilla y Bootstrap, integrando Supabase para la
+              persistencia de datos y validación de reglas de negocio antes de
+              la fase de escalado masivo.
+            </p>
+            <p class="project__tech">
+              JavaScript Vanilla · Bootstrap · Supabase · DOM Management
             </p>
             <div class="project__buttons" style="display: flex; gap: 10px">
               <a
@@ -240,142 +461,26 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn--primary"
-                >Ver página</a
+                >Demo en vivo</a
               >
               <a
-                href="https://github.com/Sunshide12/Inventory_Web"
+                href="https://github.com/Sunshide12/Inventario-Profesional-ST-"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn--primary"
                 data-i18n="projectRepo"
-                >Ver repositorio</a
+                >Ver Código</a
               >
             </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__media">
-            <img
-              src="img/apiFrontend.png"
-              alt="Frontend API - Consumo de API"
-              class="project__img"
-              data-i18n-alt="project3Alt"
-            />
-          </div>
-          <div class="project__content">
-            <h3 class="project__title" data-i18n="project3Title">
-              Frontend API
-            </h3>
-            <p
-              class="project__desc"
-              data-i18n="project3Desc1"
-              data-i18n-html="true"
-            >
-              <strong>Problema:</strong> los datos del backend solo aportan
-              valor si alguien puede consultarlos y actuar sobre ellos desde una
-              interfaz clara, sin depender de herramientas técnicas.
-            </p>
-            <p
-              class="project__desc"
-              data-i18n="project3Desc2"
-              data-i18n-html="true"
-            >
-              <strong>Qué construí:</strong> aplicación web que consume una API
-              REST: listado, filtrado y gestión de datos desde el navegador.
-            </p>
-            <p
-              class="project__desc"
-              data-i18n="project3Desc3"
-              data-i18n-html="true"
-            >
-              <strong>Demuestra:</strong> capacidad de consumir APIs REST,
-              manejar estado y datos en el cliente y traducirlos en una UI
-              funcional — habilidad central en equipos donde frontend y backend
-              están separados.
-            </p>
-            <p class="project__tech">JavaScript · HTML · CSS</p>
-            <div class="project__buttons" style="display: flex; gap: 10px">
-              <a
-                href="https://frontend-api-swart.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--primary"
-                >Ver página</a
-              >
-              <a
-                href="https://github.com/Sunshide12/FrontendAPI"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--primary"
-                data-i18n="projectRepo"
-                >Ver repositorio</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project__media">
-            <img
-              src="img/excusas.png"
-              alt="Módulo de Excusas Web"
-              class="project__img"
-              data-i18n-alt="project1Alt"
-            />
-          </div>
-          <div class="project__content">
-            <h3 class="project__title" data-i18n="project1Title">
-              Módulo de Excusas Web
-            </h3>
-            <p
-              class="project__desc"
-              data-i18n="project1Desc1"
-              data-i18n-html="true"
-            >
-              <strong>Problema:</strong> las instituciones necesitan registrar y
-              tramitar solicitudes de excusa con historial, roles y estados
-              claros para evitar pérdida de información y disputas.
-            </p>
-            <p
-              class="project__desc"
-              data-i18n="project1Desc2"
-              data-i18n-html="true"
-            >
-              <strong>Qué construí:</strong> sistema web con backend en PHP y
-              MySQL: modelos de datos relacionados, flujos de validación,
-              seguimiento de estados y roles. Proyecto de grado (Técnico y
-              Tecnólogo en COTECNOVA).
-            </p>
-            <p
-              class="project__desc"
-              data-i18n="project1Desc3"
-              data-i18n-html="true"
-            >
-              <strong>Demuestra:</strong> capacidad de modelar dominio y datos
-              relacionales, implementar reglas de negocio en backend y
-              exponerlas en formularios y flujos usables — base para sistemas
-              internos más grandes.
-            </p>
-            <p class="project__tech">PHP · JavaScript · MySQL · HTML</p>
-            <a
-              href="https://github.com/Sunshide12/Excusas-2"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn--primary"
-              data-i18n="projectRepo"
-              >Ver repositorio</a
-            >
           </div>
         </article>
       </section>
 
-      <!-- Contact -->
       <section id="contact" class="contact">
-        <h2 class="section-title" data-i18n="contactSectionTitle">CONTACT</h2>
+        <h2 class="section-title" data-i18n="contactSectionTitle">CONTACTO</h2>
         <p class="section-subtitle" data-i18n="contactSectionSubtitle">
-          Si mi perfil encaja con tu equipo o proyecto (rol junior, prácticas,
-          colaboración), escríbeme y respondo en breve.
+          Disponible para integrarme en equipos de desarrollo orientados a la
+          calidad y la escalabilidad.
         </p>
         <form
           class="contact-form"
@@ -386,14 +491,14 @@
             class="contact-form__label"
             for="name"
             data-i18n="contactLabelName"
-            >Name</label
+            >Nombre</label
           >
           <input
             type="text"
             id="name"
             name="name"
             class="contact-form__input"
-            placeholder="Enter Your Name"
+            placeholder="Tu nombre"
             data-i18n-placeholder="contactPlaceholderName"
             required
           />
@@ -408,7 +513,7 @@
             id="email"
             name="email"
             class="contact-form__input"
-            placeholder="Enter Your Email"
+            placeholder="tucorreo@ejemplo.com"
             data-i18n-placeholder="contactPlaceholderEmail"
             required
           />
@@ -416,13 +521,13 @@
             class="contact-form__label"
             for="message"
             data-i18n="contactLabelMessage"
-            >Message</label
+            >Mensaje</label
           >
           <textarea
             id="message"
             name="message"
             class="contact-form__input contact-form__textarea"
-            placeholder="Enter Your Message"
+            placeholder="Hola Steban, me gustaría discutir una oportunidad técnica..."
             data-i18n-placeholder="contactPlaceholderMessage"
             rows="5"
             required
@@ -432,7 +537,7 @@
             class="btn btn--primary contact-form__submit"
             data-i18n="contactSubmit"
           >
-            SUBMIT
+            ENVIAR MENSAJE
           </button>
           <p
             class="contact-form__feedback"
@@ -443,7 +548,6 @@
         </form>
       </section>
 
-      <!-- Footer -->
       <footer class="footer">
         <div class="footer__inner">
           <div class="footer__info">
@@ -451,7 +555,7 @@
               >STEBAN MARTÍNEZ</span
             >
             <p class="footer__tagline" data-i18n="footerTagline">
-              Web Developer · Frontend & Backend · España · Abierto a remoto.
+              Software Developer · Enfoque en Arquitectura y Código Limpio.
             </p>
           </div>
           <div class="footer__social">
@@ -484,16 +588,13 @@
       </footer>
     </main>
 
-    <!-- Chat widget -->
     <a
       href="#contact"
       class="chat-widget"
       aria-label="Chatea conmigo"
       data-i18n-aria-label="chatAriaLabel"
     >
-      <span class="chat-widget__text" data-i18n="chatText"
-        >Chat with me 👋</span
-      >
+      <span class="chat-widget__text" data-i18n="chatText">Hablemos 👋</span>
       <span class="chat-widget__icon" aria-hidden="true">💬</span>
     </a>
 

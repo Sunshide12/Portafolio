@@ -7,61 +7,62 @@
   var i18n = {
     es: {
       navHome: "HOME",
-      navAbout: "ABOUT",
+      navAbout: "TECNOLOGÍAS",
       navProjects: "PROJECTS",
       navContact: "CONTACT",
       headerName: "STEBAN MARTÍNEZ",
-      heroTitle: "STEBAN MARTÍNEZ — WEB DEVELOPER",
+      heroTitle: "STEBAN MARTÍNEZ — SOFTWARE DEVELOPER",
       heroTagline:
-        "Construyo SPAs, integro APIs y desarrollo sistemas con autenticación y bases de datos. Frontend y backend con enfoque en código mantenible y entrega funcional.",
+        "Desarrollador Full-Stack especializado en arquitecturas limpias y escalables. Domino Arquitectura Hexagonal, Vertical Slicing y Clean Code. Construyo sistemas robustos con React, Node.js y bases de datos relacionales.",
       heroMeta: "España - Denia · Abierto a remoto",
       heroCta: "VER PROYECTOS",
-      aboutSectionTitle: "ABOUT ME",
+      aboutSectionTitle: "TECNOLOGÍAS",
       aboutSectionSubtitle: "Qué construyo, en qué contexto y cómo trabajo.",
       aboutHeadingProfile: "Perfil",
       aboutText1:
-        "Construyo <strong>aplicaciones web</strong>: SPAs con JavaScript, interfaces responsivas (HTML, CSS, Bootstrap), integración con APIs REST y backends con PHP o Supabase. Uso bases de datos relacionales (MySQL, PostgreSQL, SQLite) y he implementado autenticación, RLS y dashboards con datos en tiempo real.",
+        "Construyo <strong>aplicaciones web y sistemas escalables</strong> usando principios de <strong>Clean Code</strong> y <strong>Arquitectura Hexagonal (Ports & Adapters)</strong>. Especialista en separación de responsabilidades: el dominio y la lógica de negocio completamente desacoplados de la UI y la infraestructura. Implemento <strong>Vertical Slicing</strong> para organización modular y testeable.",
       aboutText2:
-        'Mis proyectos son académicos y personales: sistemas CRUD, módulos de gestión y frontends que consumen APIs. Certificación <strong>Meta Full-Stack Developer</strong> (Frontend, Backend, APIs, Git) · <a href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX" target="_blank" rel="noopener noreferrer" class="about__credential">Ver credencial</a>. Enfoque en código legible, entrega funcional y aprendizaje continuo.',
+        'Tecnologías: <strong>React, Vite, Tailwind CSS</strong> (Frontend) · <strong>Node.js + Express</strong> (Backend) · <strong>PostgreSQL, MySQL, SQLite, Supabase</strong> (Data). Proyectos académicos y personales con CRUD, gestión de inventarios, sistemas de autenticación y dashboards en tiempo real. Certificación <strong>Meta Full-Stack Developer</strong> (Frontend, Backend, APIs, Git) · <a href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX" target="_blank" rel="noopener noreferrer" class="about__credential">Ver credencial</a>.',
       aboutText3:
-        '<a href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer">GitHub</a>. Busco mi primera oportunidad laboral, prácticas o rol junior — <a href="#contact">contacto</a>.',
+        '<a href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="mailto:stebanbusiness@gmail.com">stebanbusiness@gmail.com</a>. Abierto a oportunidades laborales, prácticas o roles de Software Developer — <a href="#contact">contacto</a>.',
       aboutCta: "CONTACTAR",
       aboutHeadingSkills: "Habilidades técnicas",
-      skillsCategoryFrontend: "Frontend",
-      skillsCategoryBackend: "Backend & APIs",
+      skillsCategoryFrontend: "Frontend & Mobile",
+      skillsCategoryBackend: "Backend & Frameworks",
       skillsCategoryDb: "Bases de datos",
       skillsCategoryTools: "Herramientas",
       projectsSectionTitle: "PROJECTS",
       projectsSectionSubtitle:
         "Proyectos personales y académicos. Cada uno resuelve un problema concreto y demuestra habilidades técnicas aplicadas.",
-      project1Alt: "Módulo de Excusas Web",
-      project1Title: "Módulo de Excusas Web",
+      project1Alt: "Sistema de Gestión de Excusas",
+      project1Title: "Sistema de Gestión de Excusas",
       project1Desc1:
-        "<strong>Problema:</strong> las instituciones necesitan registrar y tramitar solicitudes de excusa con historial, roles y estados claros para evitar pérdida de información y disputas.",
+        "<strong>Problema:</strong> instituciones educativas necesitan registrar, validar y tramitar solicitudes de excusa con historial, roles y estados claros para evitar pérdida de información.",
       project1Desc2:
-        "<strong>Qué construí:</strong> sistema web con backend en PHP y MySQL: modelos de datos relacionados, flujos de validación, seguimiento de estados y roles. Proyecto de grado (Técnico y Tecnólogo en COTECNOVA).",
+        "<strong>Qué construí:</strong> plataforma web integral con backend en <strong>PHP puro</strong> (sin frameworks) y MySQL. Modelado relacional normalizado, gestión manual de roles y permisos, flujos de validación complejos. Proyecto de grado académico.",
       project1Desc3:
-        "<strong>Demuestra:</strong> capacidad de modelar dominio y datos relacionales, implementar reglas de negocio en backend y exponerlas en formularios y flujos usables — base para sistemas internos más grandes.",
-      project2Alt: "Inventory Web - Sistema de inventario",
-      project2Title: "Inventory Web",
+        "<strong>Demuestra:</strong> comprensión profunda de lógica de negocio, modelado relacional y implementación de reglas de negocio sin depencias de frameworks — fundación para sistemas de gestión empresarial.",
+      project2Alt:
+        "Inventario Profesional ST - Sistema de inventario profesional",
+      project2Title: "Inventario Profesional ST",
       project2Desc1:
-        "<strong>Problema:</strong> negocios y equipos necesitan un único lugar para ver productos, stock y valor, con datos aislados por usuario para evitar fugas entre cuentas.",
+        "<strong>Problema:</strong> empresas y equipos necesitan un único lugar escalable para gestionar productos, stock y valor, con seguridad a nivel de datos por usuario.",
       project2Desc2:
-        "<strong>Qué construí:</strong> SPA con CRUD de productos y categorías, autenticación con Supabase (email), políticas RLS por usuario y dashboard con valor de inventario y alertas de stock bajo.",
+        "<strong>Qué construí:</strong> SPA con React, Vite y Tailwind CSS, implementando <strong>Arquitectura Hexagonal</strong>. Separación total entre la lógica de negocio (Dominio), Casos de Uso e Infraestructura (Supabase). Autenticación robusta, RLS por usuario, dashboard en tiempo real y organización modular para escalabilidad.",
       project2Desc3:
-        "<strong>Demuestra:</strong> integración con BaaS, aplicación de políticas de seguridad a nivel de fila (RLS) y estructura de frontend modular — relevante para productos SaaS y multi-tenant.",
-      project3Alt: "Frontend API - Consumo de API",
-      project3Title: "Frontend API",
+        "<strong>Demuestra:</strong> dominio avanzado de arquitecturas limpias, aplicación de patrones SOLID, diseño testeable y escalable — referencia para proyectos empresariales complejos. En desarrollo activo.",
+      project3Alt: "Inventory Web V1 - Sistema de inventario legacy",
+      project3Title: "Inventory Web V1 (Legacy)",
       project3Desc1:
-        "<strong>Problema:</strong> los datos del backend solo aportan valor si alguien puede consultarlos y actuar sobre ellos desde una interfaz clara, sin depender de herramientas técnicas.",
+        "<strong>Problema:</strong> negocios necesitan gestión de inventarios simple y funcional, con seguridad de datos por usuario.",
       project3Desc2:
-        "<strong>Qué construí:</strong> aplicación web que consume una API REST: listado, filtrado y gestión de datos desde el navegador.",
+        "<strong>Qué construí:</strong> SPA puro con JavaScript Vanilla, Bootstrap 5 e integración con Supabase. Gestión de DOM manual, manejo de estado sin librerías reactivas, CRUD en tiempo real.",
       project3Desc3:
-        "<strong>Demuestra:</strong> capacidad de consumir APIs REST, manejar estado y datos en el cliente y traducirlos en una UI funcional — habilidad central en equipos donde frontend y backend están separados.",
+        "<strong>Demuestra:</strong> control profundo del DOM, comprensión de arquitectura SPA sin frameworks reactivos y consumo de APIs BaaS — versión legacy del proyecto Inventario Profesional ST.",
       projectRepo: "Ver repositorio",
       contactSectionTitle: "CONTACT",
       contactSectionSubtitle:
-        "Si mi perfil encaja con tu equipo o proyecto (rol junior, prácticas, colaboración), escríbeme y respondo en breve.",
+        "Si mi perfil encaja con tu equipo o proyecto (desarrollo full-stack, arquitectura limpia, rol de Software Developer), escríbeme y respondo en breve.",
       contactLabelName: "Name",
       contactLabelEmail: "Email",
       contactLabelMessage: "Message",
@@ -72,7 +73,7 @@
       contactSuccess: "Mensaje enviado.",
       contactError: "Error al enviar. Inténtalo de nuevo.",
       footerTagline:
-        "Web Developer · Frontend & Backend · España · Abierto a remoto.",
+        "Software Developer · Full-Stack & Architecture Enthusiast · España · Abierto a remoto.",
       footerSocialTitle: "SOCIAL",
       footerLinkedIn: "LinkedIn",
       footerGitHub: "GitHub",
@@ -80,64 +81,73 @@
         '© Copyright <span id="year"></span>. Hecho por Steban Martínez',
       chatText: "Chat with me 👋",
       chatAriaLabel: "Chatea conmigo",
+      certificationsSectionTitle: "CERTIFICACIONES",
+      certificationsSectionSubtitle:
+        "Formación profesional validada y especialización en desarrollo Full-Stack.",
+      metaCertTitle: "Meta Full-Stack Developer",
+      metaCertDate: "Especialización Profesional • Completado: Agosto 2025",
+      metaCertDesc:
+        "Especialización completa en desarrollo <strong>Full-Stack</strong>: dominio de <strong>React</strong> y JavaScript para frontend, <strong>Django</strong> y Python para backend, diseño de bases de datos, APIs REST, control de versiones con Git y mejores prácticas de ingeniería de software.",
+      certViewButton: "Ver Credencial en Coursera",
+      certVerifyButton: "Verificar Certificado",
     },
     en: {
       navHome: "HOME",
-      navAbout: "ABOUT",
+      navAbout: "TECHNOLOGIES",
       navProjects: "PROJECTS",
       navContact: "CONTACT",
       headerName: "STEBAN MARTÍNEZ",
-      heroTitle: "STEBAN MARTÍNEZ — WEB DEVELOPER",
+      heroTitle: "STEBAN MARTÍNEZ — SOFTWARE DEVELOPER",
       heroTagline:
-        "I build SPAs, integrate APIs and develop systems with authentication and databases. Frontend and backend with a focus on maintainable code and functional delivery.",
-      heroMeta: "Spain - Denia · Open to remote",
+        "Full-Stack Developer specialized in clean architectures and scalable systems. I master Hexagonal Architecture, Vertical Slicing and Clean Code. I build robust systems with React, Node.js and relational databases.",
+      heroMeta: "Spain — Open to Remote Work",
       heroCta: "VIEW PROJECTS",
-      aboutSectionTitle: "ABOUT ME",
+      aboutSectionTitle: "TECHNOLOGIES",
       aboutSectionSubtitle: "What I build, in what context and how I work.",
       aboutHeadingProfile: "Profile",
       aboutText1:
-        "I build <strong>web applications</strong>: SPAs with JavaScript, responsive interfaces (HTML, CSS, Bootstrap), REST API integration and backends with PHP or Supabase. I use relational databases (MySQL, PostgreSQL, SQLite) and have implemented authentication, RLS and real-time data dashboards.",
+        "I build <strong>scalable web applications and systems</strong> using <strong>Clean Code</strong> and <strong>Hexagonal Architecture (Ports & Adapters)</strong> principles. Expert in separation of concerns: domain and business logic completely decoupled from UI and infrastructure. I implement <strong>Vertical Slicing</strong> for modular and testable organization.",
       aboutText2:
-        'My projects are academic and personal: CRUD systems, management modules and frontends that consume APIs. <strong>Meta Full-Stack Developer</strong> certification (Frontend, Backend, APIs, Git) · <a href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX" target="_blank" rel="noopener noreferrer" class="about__credential">View credential</a>. Focus on readable code, functional delivery and continuous learning.',
+        'Technologies: <strong>React, Vite, Tailwind CSS</strong> (Frontend) · <strong>Node.js + Express</strong> (Backend) · <strong>PostgreSQL, MySQL, SQLite, Supabase</strong> (Data). Academic and personal projects with CRUD systems, inventory management, authentication systems and real-time dashboards. <strong>Meta Full-Stack Developer</strong> certification (Frontend, Backend, APIs, Git) · <a href="https://www.coursera.org/account/accomplishments/specialization/2QBFTEOE59XX" target="_blank" rel="noopener noreferrer" class="about__credential">View credential</a>.',
       aboutText3:
-        '<a href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer">GitHub</a>. Looking for my first job opportunity, internships or junior role — <a href="#contact">contact</a>.',
+        '<a href="https://www.linkedin.com/in/steban-martinez-074697267/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/Sunshide12" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="mailto:stebanbusiness@gmail.com">stebanbusiness@gmail.com</a>. Open to job opportunities, internships or Software Developer roles — <a href="#contact">contact</a>.',
       aboutCta: "CONTACT",
       aboutHeadingSkills: "Technical skills",
-      skillsCategoryFrontend: "Frontend",
-      skillsCategoryBackend: "Backend & APIs",
+      skillsCategoryFrontend: "Frontend & Mobile",
+      skillsCategoryBackend: "Backend & Frameworks",
       skillsCategoryDb: "Databases",
       skillsCategoryTools: "Tools",
       projectsSectionTitle: "PROJECTS",
       projectsSectionSubtitle:
         "Personal and academic projects. Each one solves a concrete problem and demonstrates applied technical skills.",
-      project1Alt: "Excuses Web Module",
-      project1Title: "Excuses Web Module",
+      project1Alt: "Excuses Management System",
+      project1Title: "Excuses Management System",
       project1Desc1:
-        "<strong>Problem:</strong> institutions need to register and process excuse requests with history, roles and clear states to avoid loss of information and disputes.",
+        "<strong>Problem:</strong> educational institutions need to register, validate and process excuse requests with history, roles and clear states to avoid loss of information.",
       project1Desc2:
-        "<strong>What I built:</strong> web system with PHP and MySQL backend: related data models, validation flows, state and role tracking. Degree project (Technical and Technologist at COTECNOVA).",
+        "<strong>What I built:</strong> comprehensive web platform with <strong>pure PHP backend</strong> (no frameworks) and MySQL. Normalized relational modeling, manual role and permission management, complex validation flows. Academic degree project.",
       project1Desc3:
-        "<strong>Demonstrates:</strong> ability to model domain and relational data, implement business rules in the backend and expose them in usable forms and flows — foundation for larger internal systems.",
-      project2Alt: "Inventory Web - Inventory system",
-      project2Title: "Inventory Web",
+        "<strong>Demonstrates:</strong> deep understanding of business logic, relational modeling and implementation of business rules without framework dependencies — foundation for enterprise management systems.",
+      project2Alt: "Inventario Profesional ST - Professional inventory system",
+      project2Title: "Inventario Profesional ST",
       project2Desc1:
-        "<strong>Problem:</strong> businesses and teams need a single place to view products, stock and value, with data isolated per user to avoid leaks between accounts.",
+        "<strong>Problem:</strong> companies and teams need a scalable single place to manage products, stock and value, with per-user data security.",
       project2Desc2:
-        "<strong>What I built:</strong> SPA with product and category CRUD, Supabase (email) authentication, per-user RLS policies and dashboard with inventory value and low-stock alerts.",
+        "<strong>What I built:</strong> SPA with React, Vite and Tailwind CSS, implementing <strong>Hexagonal Architecture</strong>. Complete separation between business logic (Domain), Use Cases and Infrastructure (Supabase). Robust authentication, per-user RLS, real-time dashboard and modular organization for scalability.",
       project2Desc3:
-        "<strong>Demonstrates:</strong> BaaS integration, row-level security (RLS) policies and modular frontend structure — relevant for SaaS and multi-tenant products.",
-      project3Alt: "Frontend API - API consumption",
-      project3Title: "Frontend API",
+        "<strong>Demonstrates:</strong> advanced mastery of clean architectures, SOLID patterns application, testable and scalable design — reference for complex enterprise projects. Active development.",
+      project3Alt: "Inventory Web V1 - Legacy inventory system",
+      project3Title: "Inventory Web V1 (Legacy)",
       project3Desc1:
-        "<strong>Problem:</strong> backend data only adds value if someone can query and act on it through a clear interface, without relying on technical tools.",
+        "<strong>Problem:</strong> businesses need simple and functional inventory management with per-user data security.",
       project3Desc2:
-        "<strong>What I built:</strong> web application that consumes a REST API: listing, filtering and data management from the browser.",
+        "<strong>What I built:</strong> pure SPA with Vanilla JavaScript, Bootstrap 5 and Supabase integration. Manual DOM management, state handling without reactive libraries, real-time CRUD.",
       project3Desc3:
-        "<strong>Demonstrates:</strong> ability to consume REST APIs, handle state and data on the client and translate them into a functional UI — a core skill in teams where frontend and backend are separate.",
+        "<strong>Demonstrates:</strong> deep DOM control, understanding of SPA architecture without reactive frameworks and BaaS API consumption — legacy version of Inventario Profesional ST.",
       projectRepo: "View repository",
       contactSectionTitle: "CONTACT",
       contactSectionSubtitle:
-        "If my profile fits your team or project (junior role, internships, collaboration), get in touch and I'll reply shortly.",
+        "If my profile fits your team or project (full-stack development, clean architecture, Software Developer role), get in touch and I'll reply shortly.",
       contactLabelName: "Name",
       contactLabelEmail: "Email",
       contactLabelMessage: "Message",
@@ -148,7 +158,7 @@
       contactSuccess: "Message sent.",
       contactError: "Failed to send. Please try again.",
       footerTagline:
-        "Web Developer · Frontend & Backend · Spain · Open to remote.",
+        "Software Developer · Full-Stack & Architecture Enthusiast · Spain · Open to remote.",
       footerSocialTitle: "SOCIAL",
       footerLinkedIn: "LinkedIn",
       footerGitHub: "GitHub",
@@ -156,6 +166,15 @@
         '© Copyright <span id="year"></span>. Made by Steban Martínez',
       chatText: "Chat with me 👋",
       chatAriaLabel: "Chat with me",
+      certificationsSectionTitle: "CERTIFICATIONS",
+      certificationsSectionSubtitle:
+        "Professional training and specialization in Full-Stack development.",
+      metaCertTitle: "Meta Full-Stack Developer",
+      metaCertDate: "Professional Specialization • Completed: August 2025",
+      metaCertDesc:
+        "Complete Full-Stack development specialization: mastery of <strong>React</strong> and JavaScript for frontend, <strong>Django</strong> and Python for backend, database design, REST APIs, Git version control, and software engineering best practices.",
+      certViewButton: "View Credential on Coursera",
+      certVerifyButton: "Verify Certificate",
     },
   };
 
@@ -265,4 +284,5 @@
         });
     });
   }
+})();
 })();

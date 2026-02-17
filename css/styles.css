@@ -49,7 +49,6 @@ body {
   z-index: 100;
 }
 
-
 .header__logo {
   text-decoration: none;
   color: var(--color-text);
@@ -163,7 +162,9 @@ body {
   background: var(--color-surface);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .social-sidebar__link:hover {
@@ -232,7 +233,9 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
 .btn--primary {
@@ -287,6 +290,17 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
+}
+
+/* Make panorama span full width of the about grid and center it */
+.about__col--skills {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0 2rem 0;
 }
 
 .about__heading {
@@ -397,7 +411,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   aspect-ratio: 16 / 10;
 }
 
@@ -581,7 +595,9 @@ body {
   font-size: 0.9375rem;
   font-weight: 500;
   z-index: 50;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .chat-widget:hover {
@@ -604,5 +620,334 @@ body {
 @media (max-width: 480px) {
   .chat-widget__text {
     display: none;
+  }
+}
+
+/* ================================ */
+/* Certificaciones                   */
+/* ================================ */
+
+.certifications {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 2rem;
+}
+
+.certifications__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.certification-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: stretch;
+  background: var(--color-surface);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.certification-card__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  border-right: 1px solid #e0e0e0;
+  padding: 2rem;
+}
+
+.certification-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.certification-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.certification-card__header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.certification-card__issuer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.certification-card__logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.certification-card__platform {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.certification-card__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 1rem 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.certification-card__date {
+  font-size: 0.9375rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.certification-card__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.certification-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.cert-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  color: var(--color-text);
+  border-radius: 20px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cert-tag:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.certification-card__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .certification-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .certification-card__visual {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 350px;
+  }
+
+  .certification-card__content {
+    padding: 2rem;
+  }
+
+  .certification-card__title {
+    font-size: 1.5rem;
+  }
+
+  .certification-card__buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications {
+    margin: 60px auto;
+    padding: 0 1rem;
+  }
+
+  .certifications__grid {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .certification-card__content {
+    padding: 1.5rem;
+  }
+
+  .certification-card__title {
+    font-size: 1.25rem;
+  }
+
+  .certification-card__skills {
+    margin-bottom: 1.5rem;
+  }
+
+  .cert-tag {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* ================================ */
+/* Tech Cards - About section       */
+/* ================================ */
+
+.tech-categories {
+  display: none; /* reemplazado por panorama 3D */
+}
+
+/* Skills grid (simple icons with labels) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem 1.25rem;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0.6rem 0 1.2rem;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+}
+.skill-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+.skill-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .skill-item img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ================================ */
+/* Splide integration styles        */
+/* ================================ */
+.splide-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+.splide {
+  width: 100%;
+}
+.splide__track {
+  overflow: visible;
+}
+.splide__list {
+  display: flex;
+  align-items: center;
+}
+.splide__slide {
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  transition:
+    transform 0.22s ease,
+    opacity 0.22s ease;
+}
+.tech-card {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(15, 15, 15, 0.06);
+}
+.tech-card .tech-icon img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+.tech-card .tech-name {
+  margin-top: 0.6rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .tech-card {
+    width: 120px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 520px) {
+  .tech-card {
+    width: 100px;
+    height: 120px;
   }
 }
