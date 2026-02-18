@@ -862,7 +862,7 @@ body {
 
 @media (max-width: 900px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
   .skill-item img {
     width: 48px;
@@ -872,7 +872,7 @@ body {
 
 @media (max-width: 520px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
   }
   .skill-item img {
     width: 40px;
